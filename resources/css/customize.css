@@ -1,0 +1,125 @@
+* {
+    box-sizing:border-box;
+}
+
+body {
+    width:100%;
+    max-width:1600px;
+    margin:auto;
+}
+
+header {
+    position:fixed;
+}
+header a{
+    text-decoration:none;
+}
+.title {
+    font-family:"Dancing Script","Great Vibes", sans-serif;
+    margin-left:1.5rem;
+    background-color: black;
+    border-radius:5px;
+    padding:.5rem;
+
+  }
+.title a {
+    color:#ECE5B0;
+
+}
+
+.double {
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    align-items: center;
+    grid-template-rows:min-content;
+}
+
+@media only screen and (max-width:768px){
+    .double{
+        display:flex;
+        flex-direction:column;
+    }
+}
+
+.first {
+    max-height:500px;
+    width:auto;
+    float:right;
+}
+
+
+
+.textbox{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.fivehundred {
+    max-width:500px;
+    margin-right:auto;
+    padding:1rem;
+
+}
+
+
+.previewbox {
+    color:#ECE5B0;
+    background-color: black;
+    text-align: center;
+    font-size: 3rem;
+
+}
+#preview {
+    padding:1rem;
+    margin:0 0;
+}
+
+@media only screen and (max-width:768px){
+    #preview {
+        font-size: 2rem;
+    }
+}
+
+
+.banner {
+    background-color:black;
+    color:white;
+    text-align:center;
+    margin-top:8rem;
+    padding:.7rem;
+}
+
+.row {
+    display:flex;
+    align-items: center;
+}
+
+.imagebox{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    text-align: center;
+    align-content:center;
+}
+ .imagebox img {
+     max-width:100%;
+     object-fit:contain;
+     overflow:hidden;
+ }
+
+ .add,
+ .add-cart,
+ .add-bottle {
+    padding:.5rem;
+    margin:1rem auto 1.5rem auto;
+    border-radius:8px;
+ }
+
+ .add:hover,
+ .add-cart:hover,
+ .add-bottle:hover {
+    color:#ECE5B0;
+    background-color: black;
+ }
