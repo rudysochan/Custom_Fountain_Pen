@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Fountain Pen</title>
+    <link rel="stylesheet" type="text/css" href="resources/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/customize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,700&family=Roboto+Slab&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h3 class="title"><a href="index.html#">Custom Fountain Pen</a></h3>
+        <nav>
+            
+        </nav>
+    </header>
+
+    <div class="double ">
+        <div class="">
+            <img class=" first" src="resources/media/ZFountainPen.jpg"/>
+        </div>
+        <div class="textbox fivehundred">
+            <h1>Time to Customize!</h1>
+            <h2>Enter your text and pick your font below.</h2>
+        </div>
+    </div>
+
+    <div class="customization">
+        <div class="previewbox">   
+            <h1 id="preview">Preview Text</h1>
+        </div>
+        <div class="select textbox">
+            <div class="row">
+                <h2>Custom Text:&nbsp;&nbsp; </h2>
+                <input type="text" id="input-text" oninput="updatePreview()" placeholder="Enter Custom Text Here">
+            </div>
+
+            <div class="row">
+                <h2> Select Font:</h2>
+                <select id="font" name="Fonts" onchange="changeFont()">
+                    <option value="Arial">Arial</option>
+                    <option value="Garamond">Garamond</option>
+                </select>
+            </div>
+            <br>
+            <div class="row">
+                <h2>Custom Pen ($29) </h2>
+                <button class="add">Add Custom Pen to Cart</button>
+            </div>
+            <h3> Upon adding a pen to your cart, it will automatically be saved with the text and font you had entered.</h3>
+            <br>
+        </div>
+
+        <h2 class="banner">Add Any Ink You Need</h2>
+
+        <div class="double">
+            <div class="imagebox">
+                <h2>Ten Ink Cartridges</h2>
+                <img src="resources/media/20230727_170403.jpg"/>
+                <button class="add-cart">Add Catridges to Cart</button>
+            </div>
+            <div class="imagebox">
+                <h2>15ml ink bottle (example image)</h2>
+                <img src="resources/media/20230727_170334.jpg"/>
+                <button class="add-bottle">Add Ink Bottle to Cart</button>
+            </div>
+
+        </div>
+
+        <div class="imagebox">
+            <img src="resources/media/cropped.jpg">
+        </div>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
